@@ -1,0 +1,56 @@
+.navbar{
+    background-color: white !important;
+}
+.navbar .nav-brand {
+    color: white !important;
+    background-color: red !important;
+
+}
+.navbar .nav-link-span {
+    margin-left: auto;
+}
+.navbar .nav-link {
+    color: black !important;
+
+}
+
+.heading-divider {
+    width: 10%;
+    margin-left: 15%;
+    border-top: 4px solid red;
+    /* text-indent: 15%; */
+
+    color: red;
+    font-weight: bold;
+}
+
+.heading{
+    text-indent: 15%;
+}
+
+
+
+.container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 50px !important;
+    font-weight: bold ;
+    /* padding: 20px; */
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+  }
