@@ -21,12 +21,12 @@ export default function Header() {
             EXTO
           </Typography>
           <span className='nav-link-span'>
-              <Button className='nav-link' color="inherit">Home</Button>
-          <Button className='nav-link' color="inherit">Portfolio</Button>
-          <Button className='nav-link' color="inherit">Style</Button>
-          <Button className='nav-link' color="inherit">Blog Guide</Button>
-          <Button className='nav-link' color="inherit">About</Button>
-          <Button className='nav-link' color="inherit">Contact</Button>
+              <Button className='nav-link' >Home</Button>
+              <Button className='nav-link' color="inherit">Portfolio</Button>
+              <Button className='nav-link' color="inherit">Style</Button>
+              <Button className='nav-link' color="inherit">Blog Guide</Button>
+              <Button className='nav-link' color="inherit">About</Button>
+              <Button className='nav-link' color="inherit">Contact</Button>
           </span>
           
         </Toolbar>

@@ -4,7 +4,7 @@ import two from '../images/2.jpg';
 import three from '../images/3.jpg';
 import four from '../images/4.jpg';
 import five from '../images/5.jpg';
-import six from '../images/7.jpg';
+import six from '../images/6.jpg';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
@@ -66,11 +66,13 @@ function RecentWork() {
     return (
         <div >
             <Grid container spacing={3}>
-                <Grid item sm={2} md={1}></Grid>
+                <Grid item sm={1} md={1}></Grid>
 
-                <Grid item sm={8} md={10} >
-                <hr className='heading-divider' />
-                {/* <Divider className='heading-divider' /> */}
+                <Grid item sm={10} md={10} >
+
+                {/* <div  className='heading'><h3  className='heading-bar'></h3>
+                <h3>Recent</h3></div> */}
+                
 
                 <Typography className='heading' variant='h4' gutterBottom>
                     Recent Work
@@ -83,7 +85,7 @@ function RecentWork() {
               
                 {tileData.map((tile) => (
                 <GridListTile key={tile.img}  cols={tile.cols || 1} className='container'>
-                    <img src={tile.img} alt={tile.title} />
+                    <img className='tile-img' src={tile.img} alt={tile.title} />
                     <GridListTileBar className='overlay'
                     title={tile.title}
                     
@@ -93,7 +95,7 @@ function RecentWork() {
             </GridList>
                 </Grid>
 
-                <Grid item sm={2} md={1}></Grid>
+                <Grid item sm={1} md={1}></Grid>
             </Grid>
             
         </div>
