@@ -28,7 +28,12 @@
 
 .wrapper{
     margin-top: 50px;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
+}
+
+.title-wrapper{
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 .home-title{
@@ -37,7 +42,7 @@
 }
 
 .title-div{
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .button{
@@ -75,8 +80,8 @@
 .container {
     position: relative;
     overflow: hidden;
-    display: block;
-    /* border: 1px solid yellow; */
+    display: inline-block;
+    border: 1px solid yellow;
 }
 /* .container::after{
     background: rgba(39, 44, 48, 0.65);
@@ -93,39 +98,20 @@
     transition: .3s ease;
 } */
 
-.overlay-gridlist{
-    position: absolute;
-    /* top: 50%;
-    left: 50%; */
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    height: 100% !important;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 50px !important;
-    font-weight: bold ;
-    /* padding: 20px; */
-    text-align: center;
-}
-
-
 .overlay{
     position: absolute;
     top: 0%;
     bottom: 0%;
     left: 0%;
     right: 0%;
-    
     width: 100%;
-    transition: .5s ease;
+    height: 100%;
+    transition: .3s ease;
     opacity:0;
     /* font-size: 26px !important;
     font-weight: bold ;
-    text-align: center; */
-    
+    text-align: center;
+    color: #f1f1f1; */
 }
 
 
@@ -134,17 +120,11 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-
-/* .tile-img:hover{
-    transform: scale((1.15));
-} */
-
 .recent-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all .2s;
-    /* border: 1px solid blue; */
+    transition: transform ease-in-out 0.5s;
 }
 
 .recent-img-title{
@@ -152,14 +132,30 @@
     position: absolute;
     color: #f1f1f1;
     font-size: 26px !important;
-    font-weight: bold ;
-    text-align: center;
+    font-weight: bold;
+    /* text-align: center; */
     top: 35%;
-    left: 40%;
+    left: 35%;
 
 }
 
-/* .container:hover .recent-img{
+.container:hover .recent-img{
     transform: scale(1.15);
+}
 
-} */
+.service-paper{
+    padding: 10px;
+}
+
+.service-num{
+    /* font-weight: bold;
+    font-size: 20px !important; */
+    width: fit-content;
+    padding: 10px 15px;
+    border: 2px solid rgba(0, 0, 0, 0.2) !important; 
+}
+
+.service-para{
+    line-height: 1.8rem;
+    font-size: 20px;
+}

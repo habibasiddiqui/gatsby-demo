@@ -5,9 +5,8 @@ function Hero() {
     return (
         <div className='wrapper'>
             <Grid container spacing={3}>
-                <Grid item sm={1} md={2}></Grid>
                 
-                <Grid item sm={10} md={9} >
+                <Grid item sm={10} md={8} >
                     <Typography variant='h3' className='home-title' gutterBottom>
                         Hi, I'm Stackbit Exto Portfolio Theme.
                         <Typography variant='subtitle1'>
@@ -19,11 +18,9 @@ function Hero() {
                     <Button variant='outlined' className='button'>Let's Talk</Button>
 
                 </Grid>
-
-                <Grid item sm={1} md={1}></Grid>
             </Grid>
-            
-        </div>
+
+        </div>   
     )
 }
 
