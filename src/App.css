@@ -79,9 +79,9 @@
 
 
 .container {
-    position: relative;
     overflow: hidden;
-    display: inline-block;
+    display: block;
+    position: relative;
     /* border: 1px solid yellow; */
     top: 0%;
     bottom: 0%;
@@ -91,7 +91,6 @@
     height: 100%;
 
 }
-
 
 .overlay{
     position: absolute;
@@ -103,31 +102,20 @@
     height: 100%;
     transition: .3s ease;
     opacity:0;
-    /* font-size: 26px !important;
-    font-weight: bold ;
-    text-align: center;
-    color: #f1f1f1; */
-}
+    background: rgba(97, 89, 89, 0.5);
 
-.overlay2 {
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 3%;
-    right: 0%;
-    width: 94%;
-    height: 100%;
-    transition: .3s ease;
-    opacity:1;
-    background: rgba(0, 0, 0, 0.5);
-}
+    /* opacity: 1;
+    background: rgba(97, 89, 89, 0.5); */
 
-.container:hover .overlay {
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.5);
 }
 
 .recent-img{
+    display: block;
+    position: relative;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -135,7 +123,6 @@
 }
 
 .recent-img-title{
-
     position: absolute;
     color: #f1f1f1;
     font-size: 26px !important;
@@ -146,21 +133,58 @@
 
 }
 
-.recent-img-title2{
+.container:hover .overlay {
+    opacity: 1;
+}
 
+.container:hover .recent-img, .container2:hover .recent-img, .container3:hover .recent-img {
+    transform: scale(1.15);
+}
+
+.container2, .container3 {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    /* border: 1px solid yellow; */
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay2, .overlay3 {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+    opacity:0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container2:hover .overlay2{
+    opacity: 1;
+}
+
+.overlay3 {
+    opacity:1 !important;
+}
+
+.recent-img-title3{
     position: absolute;
     color: #d8195e;
     border: 1px solid #d8195e;
     padding: 10px;
     font-size: 26px !important;
     font-weight: bold;
-    /* text-align: center; */
     top: 35%;
     left: 35%;
 
-}
-.container:hover .recent-img{
-    transform: scale(1.15);
 }
 
 .service-paper{

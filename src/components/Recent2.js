@@ -37,56 +37,56 @@ function Recent2() {
          
                     <Grid container spacing={3} >
 
-                        <Grid item xs={12} sm={7} md={7}>
-                            <div className='container' >
+                        <Grid item xs={12} sm={7} md={7} >
+                            <div className='container2' >
                                 <img className='recent-img' src={imgData[6].img} />
-                                <div className='overlay'>
+                                <div className='overlay2'>
                                     <h4 className='recent-img-title'>{imgData[6].title}</h4>
                                 </div>
                             </div>
                         </Grid> 
 
                         <Grid item xs={12} sm={5} md={5}>
-                            <div className='container' >
+                            <div className='container2' >
                                 <img className='recent-img' src={imgData[5].img} />
-                                <div className='overlay'>
+                                <div className='overlay2'>
                                     <h4 className='recent-img-title'>{imgData[5].title}</h4>
                                 </div>
                             </div>
                         </Grid> 
 
                         <Grid item xs={12} sm={5} md={5}  >
-                            <div className='container' >
+                            <div className='container2' >
                                 <img className='recent-img' src={imgData[4].img} />
-                                <div className='overlay'>
+                                <div className='overlay2'>
                                     <h4 className='recent-img-title'>{imgData[4].title}</h4>
                                 </div>
                             </div>
                         </Grid> 
 
                         <Grid item xs={12} sm={7} md={7}  >
-                            <div className='container' >
+                            <div className='container2' >
                                 <img className='recent-img' src={imgData[3].img} />
-                                <div className='overlay'>
+                                <div className='overlay2'>
                                     <h4 className='recent-img-title'>{imgData[3].title}</h4>
                                 </div>
                             </div>
                         </Grid> 
 
                         <Grid item xs={12} sm={7} md={7} >
-                            <div className='container' >
+                            <div className='container2' >
                                 <img className='recent-img' src={imgData[2].img} />
-                                <div className='overlay'>
+                                <div className='overlay2'>
                                     <h4 className='recent-img-title'>{imgData[2].title}</h4>
                                 </div>
                             </div>
                         </Grid> 
                         
                         <Grid item xs={12} sm={5} md={5} >
-                            <div className='container' >
+                            <div className='container3' >
                                 <img className='recent-img' src={imgData[0].img} />
-                                <div className='overlay2'>
-                                    <h4 className='recent-img-title2'>View All</h4>
+                                <div className='overlay3'>
+                                    <h4 className='recent-img-title3'>View All</h4>
                                 </div>
                             </div>
                         </Grid> 
