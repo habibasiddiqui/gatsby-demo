@@ -22,11 +22,8 @@ function Recent2() {
         }
         }
     `);
-
-    console.log('array', data.allContentfulDemo2.edges);
- 
     let imgArr = data.allContentfulDemo2.edges;
-    console.log(imgArr);
+    // console.log(imgArr);
 
     let imgData = imgArr.map((item) => {
         return { 
@@ -34,29 +31,28 @@ function Recent2() {
             title: item.node.title
         }
     });
-    
-    console.log(imgData);
+    // console.log(imgData);
     
     return (
          
                     <Grid container spacing={3} >
 
-                        <Grid item xs={12} sm={7} md={7} className='container'>
-                            {/* <div className='container' > */}
+                        <Grid item xs={12} sm={7} md={7}>
+                            <div className='container' >
                                 <img className='recent-img' src={imgData[6].img} />
                                 <div className='overlay'>
                                     <h4 className='recent-img-title'>{imgData[6].title}</h4>
                                 </div>
-                            {/* </div> */}
+                            </div>
                         </Grid> 
 
-                        <Grid item xs={12} sm={5} md={5} className='container'>
-                            {/* <div className='container' > */}
+                        <Grid item xs={12} sm={5} md={5}>
+                            <div className='container' >
                                 <img className='recent-img' src={imgData[5].img} />
                                 <div className='overlay'>
                                     <h4 className='recent-img-title'>{imgData[5].title}</h4>
                                 </div>
-                            {/* </div> */}
+                            </div>
                         </Grid> 
 
                         <Grid item xs={12} sm={5} md={5}  >
@@ -89,8 +85,8 @@ function Recent2() {
                         <Grid item xs={12} sm={5} md={5} >
                             <div className='container' >
                                 <img className='recent-img' src={imgData[0].img} />
-                                <div className='overlay'>
-                                    <h4 className='recent-img-title'>{imgData[0].title}</h4>
+                                <div className='overlay2'>
+                                    <h4 className='recent-img-title2'>View All</h4>
                                 </div>
                             </div>
                         </Grid> 

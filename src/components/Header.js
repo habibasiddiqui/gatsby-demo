@@ -5,18 +5,15 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-// import '../App.css'
+import { Navbar, Nav } from 'react-bootstrap';
 
 export default function Header() {
 
 
   return (
     <div >
-      <AppBar position="static" className='navbar'>
+      {/* <AppBar position="static" className='navbar'>
         <Toolbar>
-          {/* <IconButton edge="start" aria-label="menu">
-            <MenuIcon />
-          </IconButton> */}
           <Typography className='nav-brand' variant="h6">
             EXTO
           </Typography>
@@ -30,7 +27,30 @@ export default function Header() {
           </span>
           
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
+
+
+      <Navbar className='navbar' expand="lg">
+        <Navbar.Brand className='nav-brand' >EXTO</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link className='nav-link' href="#">Home</Nav.Link>
+            <Nav.Link className='nav-link' href="#">Portfolio</Nav.Link>
+            <Nav.Link className='nav-link' href="#">Style</Nav.Link>
+            <Nav.Link className='nav-link' href="#">Blog</Nav.Link>
+            <Nav.Link className='nav-link' href="#">About</Nav.Link>
+            <Nav.Link className='nav-link' href="#">Contact</Nav.Link>
+          </Nav>
+
+        </Navbar.Collapse>
+      </Navbar>
+
+
+
+
+
+
     </div>
   );
 }
